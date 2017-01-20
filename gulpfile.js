@@ -18,6 +18,11 @@ elixir(function (mix) {
         './node_modules/bootstrap/dist/css/bootstrap.min.css',
         './node_modules/font-awesome/css/font-awesome.min.css',
         './node_modules/ionicons/dist/css/ionicons.min.css',
+        './node_modules/icheck/skins/square/blue.css',
+        './node_modules/bootstrap-daterangepicker/daterangepicker.css',
+        './node_modules/bootstrap-sweetalert/dist/sweetalert.css',
+        './node_modules/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css',
+        './node_modules/animate.css/animate.css',
         './node_modules/gentelella/build/css/custom.min.css'
     ], 'public/gentelella/css/gentelella.css')
         .scripts([
