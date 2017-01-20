@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "animate.css": "^3.5.2",
-    "autonumeric": "^2.0.0-beta.23",
+    "autonumeric": "^1.9.46",
     "bootstrap": "^3.3.7",
     "bootstrap-daterangepicker": "^2.1.25",
     "bootstrap-fileinput-npm": "^4.2.8",
