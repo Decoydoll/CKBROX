@@ -23,7 +23,8 @@ elixir(function (mix) {
         './node_modules/bootstrap-sweetalert/dist/sweetalert.css',
         './node_modules/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css',
         './node_modules/animate.css/animate.css',
-        './node_modules/gentelella/build/css/custom.min.css'
+        './node_modules/gentelella/build/css/custom.min.css',
+        './resources/assets/css/gentelella.custom.css'
     ], 'public/gentelella/css/gentelella.css')
         .scripts([
             './node_modules/jquery/dist/jquery.min.js',
@@ -48,7 +49,8 @@ elixir(function (mix) {
             './node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
             './node_modules/noty/js/noty/packaged/jquery.noty.packaged.js',
             './node_modules/modernizr/bin/modernizr',
-            './node_modules/gentelella/build/js/custom.min.js'
+            './node_modules/gentelella/build/js/custom.min.js',
+            './resources/assets/js/gentelella.custom.js'
         ], 'public/gentelella/js/gentelella.js')
         .copy('node_modules/highcharts/highcharts.js', 'public/gentelella/js')
         .copy('node_modules/fullcalendar/dist/fullcalendar.min.js', 'public/gentelella/js')

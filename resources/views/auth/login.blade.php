@@ -1,5 +1,9 @@
 @extends('layouts.gentelella.auth')
 
+@section('title')
+    Login
+@endsection
+
 @section('content')
 <div class="login_wrapper">
     <div class="form login_form">
@@ -7,12 +11,11 @@
             <form action="{{ url('/login') }}" method="post">
                 <h1>Login Form</h1>
                 <div>
-                    <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
-
+                    <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required placeholder="Email">
                     @if ($errors->has('email'))
                         <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
+                            <strong>{{ $errors->first('email') }}</strong>
+                        </span>
                     @endif
                 </div>
                 <div>
@@ -20,8 +23,8 @@
 
                     @if ($errors->has('password'))
                         <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
+                            <strong>{{ $errors->first('password') }}</strong>
+                        </span>
                     @endif
                 </div>
                 <div>
@@ -34,9 +37,7 @@
                 <div class="clearfix"></div>
 
                 <div class="separator">
-                    <p class="change_link">New to site?
-                        <a href="/register" class="to_register"> Create Account </a>
-                    </p>
+                    <p class="change_link"><a href="/register" class="to_register"> Create Account </a></p>
                 </div>
             </form>
         </div>
